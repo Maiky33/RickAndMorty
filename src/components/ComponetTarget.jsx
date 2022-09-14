@@ -16,7 +16,7 @@ const ContainerTargets = () => {
   const [links, setlinks] = useState({});
   const [seach, setSeach] = useState("");
 
-  console.log(characters);
+  
   const fetchApi = async (url) => {                             
     const res = await fetch(url);
     const resjson = await res.json();
@@ -54,7 +54,7 @@ const ContainerTargets = () => {
           placeholder="Character"
           onChange={teclear}
         ></input>
-        <button className="ButtonClass"  value={seach}>
+        <button className="ButtonClass">
           Seach
         </button>
       </div>
@@ -68,20 +68,15 @@ const ContainerTargets = () => {
 
       <div className="ContaineFlexTargets">
         <div className="ContainerGridTragets">
-          {characters
-            .filter((characterfilter) => {
-              if (
-                characterfilter.name
-                  .toString()
-                  .toLowerCase()
-                  .includes(seach.toLowerCase())
-              ) {
-                return true;
-              }else return false
+          {characters.filter((characterfilter) => {
+            if (characterfilter.name.toString().toLowerCase().includes(seach.toLowerCase())) {
+              return characterfilter//(true);//funciona con el caracter dado (characterfilter) o solo poniendo true si lo   encuentra automaticamente envia el caracter
+            } else return false;
             })
             .map((item,index) => (
-              <ComponentCard key={index} item={item}/>
-            ))}
+              <ComponentCard key={index} item={item} />
+            ))
+          }
         </div>
       </div>
     </>
