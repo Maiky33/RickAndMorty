@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/github.io/RickAndMorty/static/css/main.4cbdcb94.css",
+    "main.js": "/github.io/RickAndMorty/static/js/main.a6f2ee07.js",
+    "static/media/RickAndMortySilueta.png": "/github.io/RickAndMorty/static/media/RickAndMortySilueta.baed2aa9fd898b557db9.png",
+    "index.html": "/github.io/RickAndMorty/index.html",
+    "main.4cbdcb94.css.map": "/github.io/RickAndMorty/static/css/main.4cbdcb94.css.map",
+    "main.a6f2ee07.js.map": "/github.io/RickAndMorty/static/js/main.a6f2ee07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cbdcb94.css",
+    "static/js/main.a6f2ee07.js"
+  ]
+}
