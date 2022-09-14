@@ -1,0 +1,53 @@
+
+
+*{
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+.ContainerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: 0px 20px;
+}
+
+.ImageLogo{ 
+    filter: invert(18%) sepia(8%) saturate(13%) hue-rotate(342deg) brightness(86%) contrast(88%);
+    height: 60px;   
+    cursor: pointer; 
+}
+
+.ContainerList{
+    display: flex;
+}
+.ContainerList li {
+    font-weight: bold;
+    margin-left: 40px;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.ContainerTitle{    
+    margin: 80px 0px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+}
+
+@media screen and (min-width: 440px){
+    .simbolsuport{  
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 440px) {  
+    .suport{
+        display: none;
+    }
+}

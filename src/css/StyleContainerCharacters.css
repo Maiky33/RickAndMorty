@@ -1,0 +1,58 @@
+.ContainerTargets{
+    background: #202329;
+    height: auto;
+    padding-bottom: 70px;
+}
+
+
+
+.ContaineFlexTargets{
+    display: flex;
+    justify-content: center;
+}
+
+.ContainerGridTragets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.ContainerButtonsSlider{    
+    display: flex;
+    justify-content: center;
+}
+
+.buttonslider{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+    cursor: pointer;
+    color: #202329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+
+
+@media screen and (max-width: 810px) {
+
+    .ContainerGridTragets {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+}
+    
+
+
+
+    
+
+    
