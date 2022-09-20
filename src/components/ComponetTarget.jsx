@@ -59,9 +59,10 @@ const ContainerTargets = () => {
 
   const alerta = () => {  
     Swal.fire({
-      position: 'top-end',
+      position: 'center',
       icon: 'error',
       title: 'No characters found',
+      text:'try to find it on another page',
       showConfirmButton: false,
       timer: 1500
     })
