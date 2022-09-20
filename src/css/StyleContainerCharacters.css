@@ -1,3 +1,4 @@
+
 .ContainerTargets{
     background: #202329;
     height: auto;
@@ -40,7 +41,7 @@
 
 
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1150px) {
 
     .ContainerGridTragets {
         display: grid;

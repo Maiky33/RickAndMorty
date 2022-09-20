@@ -3,6 +3,7 @@ import { BsFillHexagonFill } from 'react-icons/bs'
 
 
 const ComponentCard = ({item}) => {
+  
   return (
     <div className="ContainerTarget" key={item.id}>
       <img className="imgprueba" alt="img" src={item.image} />
@@ -17,7 +18,7 @@ const ComponentCard = ({item}) => {
                 ? "bsred"
                 : "bsdesconocido"
             }
-          />{" "}
+          />
           {item.status} - {item.species}
         </p>
         <h4 className="colorText2">Last Known location:</h4>
