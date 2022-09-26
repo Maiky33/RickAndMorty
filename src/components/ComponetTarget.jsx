@@ -21,19 +21,8 @@ const ContainerTargets = () => {
   const fetchApi = async (url) => {                             
     const res = await fetch(url);
     const resjson = await res.json(); 
-    console.log(resjson);
-    if (resjson?.results?.length > 0) {
-      setcharacters(resjson.results);
-      setlinks(resjson.info);
-    } else {  
-      Swal.fire({
-        title: 'Error!',
-        text: 'Do you want to continue',
-        icon: 'error',
-        confirmButtonText: 'Cool'
-      })
-    }
-    
+    setcharacters(resjson.results);
+    setlinks(resjson.info);
   };
   //sirve gracias a que la funcion fetchApi la cual solicita la url,luego llmamos la const url la primera vez con el use effect sin dependecias para que asi se renderice la primera vez, ya luego con las funciones regreza y avanza podemos cambiar la url obteniendo los datos nuevos.
   useEffect(() => {
@@ -56,11 +45,10 @@ const ContainerTargets = () => {
   }
 
 
-
   const alerta = () => {  
     Swal.fire({
       position: 'center',
-      icon: 'error',
+      icon: 'info',
       title: 'No characters found',
       text:'try to find it on another page',
       showConfirmButton: false,
@@ -108,7 +96,11 @@ const ContainerTargets = () => {
               <ComponentCard key={index} item={item} />
             ))
             : // : es igualo a else 
-            <div>{alerta()}</div>
+            <div>
+              {
+                alerta()
+              }
+            </div>
           } 
         </div>
       </div>

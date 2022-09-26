@@ -13,15 +13,12 @@ const Pasarpag = ({prev, next, regrezar , avanzar}) => {
     avanzar()
   }
 
-  return ( 
+  return (
     <div className="ContainerButtonsSlider">
-      {prev ? (
-        <button className="buttonslider" onClick={regreza}>
+      {prev ? (<button className="buttonslider" onClick={regreza}>
           <BsFillCaretLeftFill />
         </button>
-      ) : null}
-
-      {next ? (
+      ) : null} {next ? (
         <button className="buttonslider" onClick={avanza}>
           <BsFillCaretRightFill />
         </button>
